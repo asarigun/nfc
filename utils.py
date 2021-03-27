@@ -12,7 +12,7 @@ from scipy.sparse.linalg.eigen.arpack import eigsh
 from sklearn.metrics.pairwise import cosine_similarity  
 from sklearn.metrics import jaccard_similarity_score
 import sys
-import pdb
+#import pdb
 import random
 from random import shuffle
 
@@ -508,7 +508,7 @@ def reorgonize_features(features,adj):
             new_features = np.concatenate((new_features,fea_mer4))             
     
     new_features = np.transpose(new_features, (0, 2, 1)) 
-    pdb.set_trace()   
+    #pdb.set_trace()   
     return new_features, adj0
 
 
