@@ -3,7 +3,7 @@
 from layers import *
 from metrics import masked_softmax_cross_entropy
 from metrics import masked_accuracy
-import pdb
+#import pdb
 
 #flags = tf.app.flags
 #FLAGS = flags.FLAGS
