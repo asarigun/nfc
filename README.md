@@ -5,6 +5,7 @@
   <a href="https://arxiv.org/abs/1812.00086"><img src="https://img.shields.io/badge/Paper-Report-red"/></a>
   <a href="https://github.com/LiZhang-github/NFC-GCN"><img src="https://img.shields.io/badge/Official-Code-ff69b4"/></a>
   <a href="https://github.com/asarigun/nfc-gcn/blob/main/LICENSE"><img src="https://img.shields.io/github/license/thudm/cogdl"/></a>
+  <a href="https://colab.research.google.com/drive/1yJkNXZmZLa3uUTc3wwn5VhE3KsExMWDi?usp=sharing" alt="license"><img src="https://colab.research.google.com/assets/colab-badge.svg"/></a>
 </p>
 
 
