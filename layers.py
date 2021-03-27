@@ -1,6 +1,6 @@
 from inits import *
 import tensorflow as tf
-import pdb
+#import pdb
 
 flags = tf.app.flags
 FLAGS = flags.FLAGS
@@ -108,7 +108,7 @@ class Dense(Layer):
 
         # transform
         output = dot(x, self.vars['weights'], sparse=self.sparse_inputs)
-        pdb.set_trace()
+        #pdb.set_trace()
         print("==============",output)
         # bias
         if self.bias:
@@ -151,7 +151,7 @@ class GraphConvolution1(Layer):
 
     def _call(self, inputs):
 
-        pdb.set_trace()
+        #pdb.set_trace()
         print('**************************************')
         x = inputs # shape=(2708, 1433, 5, 1)
         x = tf.nn.dropout(x,1-self.dropout)
