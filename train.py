@@ -10,7 +10,7 @@ from scipy import sparse
 from models import GCN
 import scipy.io as scio
 from scipy.sparse import csr_matrix
-import pdb
+#import pdb
 
 
 #Settings
@@ -88,7 +88,7 @@ elif FLAGS.model == 'dense':
 else:
     raise ValueError('Invalid argument for model: ' + str(FLAGS.model))
 # Define placeholders
-pdb.set_trace()
+#pdb.set_trace()
 placeholders = {
     'support': [tf.sparse_placeholder(tf.float32) for _ in range(num_supports)],
     'support_adj':tf.placeholder(tf.int32, shape = (adj.shape[0],adj.shape[1])),
