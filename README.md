@@ -19,7 +19,7 @@ Graph convolutional network (GCN) is an emerging neural network approach.  It le
 
 Li  Zhang , Heda Song, Haiping  Lu, 2018, [Graph Node-Feature Convolution for Representation Learning](https://arxiv.org/abs/1812.00086) 
 
-For official implementation, you can visit [here!](https://github.com/LiZhang-github/NFC-GCN)
+For official implementation, you can visit [![report](https://img.shields.io/badge/Official-Code-yellow)](https://github.com/LiZhang-github/NFC-GCN)
 
 
 ## Requirements
