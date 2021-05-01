@@ -15,7 +15,7 @@ Implementation of Graph Node-Feature Convolution for Representation Learning in 
 
 ![Graph Node-Feature Convolution for Representation Learning](https://github.com/asarigun/nfc-gcn/blob/main/images/figure.jpg)
 
-"Graph convolutional network (GCN) is an emerging neural network approach.  It learns new representation of a node by aggregating feature vectors of all neighbors in the aggregation process without considering whether the neighbors or features are useful or not. Recent methods have improved solutions by sampling a fixed size set of neighbors, or assigning different weights to different neighbors in the aggregation process, but features within a feature vector are still treated equally in the aggregation process. In this paper, a new convolution operation is introduced on regular size feature maps constructed from features of a fixed node bandwidth via sampling to get the first-level node representation, which is then passed to a standard GCN to learn the second-level node representation."
+Graph convolutional network (GCN) is an emerging neural network approach.  It learns new representation of a node by aggregating feature vectors of all neighbors in the aggregation process without considering whether the neighbors or features are useful or not. Recent methods have improved solutions by sampling a fixed size set of neighbors, or assigning different weights to different neighbors in the aggregation process, but features within a feature vector are still treated equally in the aggregation process. In this paper, a new convolution operation is introduced on regular size feature maps constructed from features of a fixed node bandwidth via sampling to get the first-level node representation, which is then passed to a standard GCN to learn the second-level node representation. [[1](https://arxiv.org/abs/1812.00086)]
 
 Li  Zhang , Heda Song, Haiping  Lu, 2018, https://arxiv.org/abs/1812.00086 
 
@@ -33,6 +33,17 @@ python train.py
 You can also try out in colab if you don't have any requirements! <a href="https://colab.research.google.com/drive/1yJkNXZmZLa3uUTc3wwn5VhE3KsExMWDi?usp=sharing" alt="license"><img src="https://colab.research.google.com/assets/colab-badge.svg"/></a>
 
 Note: Since random inits, your training results may not exact the same as reported in the paper!
+
+## Data
+
+In order to use your own data, you have to provide 
+* an N by N adjacency matrix (N is the number of nodes), 
+* an N by D feature matrix (D is the number of features per node), and
+* an N by E binary label matrix (E is the number of classes).[[2](https://arxiv.org/abs/1609.02907)]
+
+Have a look at the `load_data()` function in `utils.py` for an example.
+
+In this example, we load citation network data (Cora, Citeseer or Pubmed). The original datasets can be found here: http://www.cs.umd.edu/~sen/lbc-proj/LBC.html. In our version (see `data` folder) we use dataset splits provided by https://github.com/kimiyoung/planetoid (Zhilin Yang, William W. Cohen, Ruslan Salakhutdinov, [Revisiting Semi-Supervised Learning with Graph Embeddings](https://arxiv.org/abs/1603.08861), ICML 2016). 
 
 You can specify a dataset as follows:
 
