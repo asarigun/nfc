@@ -45,8 +45,10 @@ Have a look at the `load_data()` function in `utils.py` for an example.
 
 In this example, we load citation network data (Cora, Citeseer or Pubmed). The original datasets can be found here: http://www.cs.umd.edu/~sen/lbc-proj/LBC.html. In our version (see `data` folder) we use dataset splits provided by https://github.com/kimiyoung/planetoid (Zhilin Yang, William W. Cohen, Ruslan Salakhutdinov, [Revisiting Semi-Supervised Learning with Graph Embeddings](https://arxiv.org/abs/1603.08861), ICML 2016). 
 
-You can specify a dataset as follows:
-
+You can specify a dataset by editing `train.py`
+<!--
+You can specify a dataset as follows: -->
+<!--
 * For Citeseer: 
 ```bash
 python train.py --dataset citeseer
@@ -58,8 +60,8 @@ python train.py --dataset cora
 * For Pubmed: 
 ```bash
 python train.py --dataset pubmed
-```
-(or by editing `train.py`)
+``` 
+(or by editing `train.py`) -->
 
 
 ## Reference
