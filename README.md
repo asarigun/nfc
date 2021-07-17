@@ -70,5 +70,22 @@ python train.py --dataset pubmed
 
 [2] [Kipf & Welling, Semi-Supervised Classification with Graph Convolutional Networks, 2016](https://arxiv.org/abs/1609.02907)  [![report](https://img.shields.io/badge/Official-Code-ff69b4)](https://github.com/tkipf/gcn)
 
+## Citation 
 
+``` 
+@article{zhang2018graph,
+  title={Graph node-feature convolution for representation learning},
+  author={Zhang, Li and Song, Heda and Lu, Haiping},
+  journal={arXiv preprint arXiv:1812.00086},
+  year={2018}
+}
+``` 
+``` 
+@article{kipf2016semi,
+  title={Semi-supervised classification with graph convolutional networks},
+  author={Kipf, Thomas N and Welling, Max},
+  journal={arXiv preprint arXiv:1609.02907},
+  year={2016}
+}
+``` 
 
