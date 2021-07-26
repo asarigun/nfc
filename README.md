@@ -72,7 +72,7 @@ python train.py --dataset pubmed
 
 ## Citation 
 
-``` 
+```bibtex
 @article{zhang2018graph,
   title={Graph node-feature convolution for representation learning},
   author={Zhang, Li and Song, Heda and Lu, Haiping},
@@ -80,7 +80,7 @@ python train.py --dataset pubmed
   year={2018}
 }
 ``` 
-``` 
+```bibtex
 @article{kipf2016semi,
   title={Semi-supervised classification with graph convolutional networks},
   author={Kipf, Thomas N and Welling, Max},
